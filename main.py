@@ -57,7 +57,7 @@ def add_product(product : Product, db: Session = Depends(get_db)):
     if product.quantity < 0:
         raise HTTPException(400, "Quantity cannot be negative")
     
-    db.add(database_model.Product(**product.model_dump()))
+    db.add(database_model.Product(**product.dict()))
     db.commit()
     return product
 
