@@ -7,6 +7,7 @@ class Product(BaseModel):
     price : float
     quantity : int
 
-
+class Config:
+    orm_mode = True
     
 
