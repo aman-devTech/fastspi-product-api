@@ -1,34 +1,53 @@
-FastAPI Product API 🚀
-A simple and practical backend API built with FastAPI + PostgreSQL for managing products.
+# FastAPI Product API 🚀
+
+A simple and practical backend API built with **FastAPI + PostgreSQL** for managing products.  
 This project focuses on clean structure, proper database handling, and real-world API features like search, pagination, and filtering.
 
-👤 Author
-Aman Raj
-B.Tech CSE | Backend Development Enthusiast
-FastAPI • Python • PostgreSQL • REST APIs
+---
 
-🌐 Live Demo
-👉 https://fastapi-product-api-v3.onrender.com
-👉 Swagger Docs: /docs
+## 👤 Author
 
-📌 About the Project
+**Aman Raj**  
+B.Tech CSE | Backend Development Enthusiast  
+FastAPI • Python • PostgreSQL • REST APIs  
+
+---
+
+## 🌐 Live Demo
+
+👉 https://fastapi-product-api-v3.onrender.com  
+👉 Swagger Docs: /docs  
+
+---
+
+## 📌 About the Project
+
 This API allows users to perform full CRUD operations on products and includes additional features such as:
-Search products by name
-Pagination support
-Filter by price
-Input validation
-Database integration with PostgreSQL
-The main goal was to understand how a real backend works — beyond just writing endpoints.
 
-🛠 Tech Stack
-Python
-FastAPI
-PostgreSQL
-SQLAlchemy
-Pydantic
-Uvicorn
+- Search products by name  
+- Pagination support  
+- Filter by price  
+- Input validation  
+- Database integration with PostgreSQL  
 
-📂 Project Structure
+The main goal of this project was to understand how a real backend application is structured and deployed.
+
+---
+
+## 🛠 Tech Stack
+
+- Python  
+- FastAPI  
+- PostgreSQL  
+- SQLAlchemy  
+- Pydantic  
+- Uvicorn  
+
+---
+
+## 📂 Project Structure
+
+```
 FastAPI_phase-1/
 │── app/
 │   ├── routers/
@@ -41,33 +60,42 @@ FastAPI_phase-1/
 │── .env
 │── requirements.txt
 │── render.yaml
+│── README.md
+```
 
-🚀 Features
-1. CRUD Operations
-Create a product
-Get all products
-Get product by ID
-Update product
-Delete product
+---
 
-2. Extra Functionalities
-Search by product name
-Paginatio
-Filter products by minimum price
-Validation for price & quantity
+## 🚀 Features
 
-🔗 API Endpoints
+### CRUD Operations
+- Create a product  
+- Get all products  
+- Get product by ID  
+- Update product  
+- Delete product  
 
-➤ Get All Products
-GET /product
+### Extra Functionalities
+- Search by product name  
+- Pagination  
+- Filter products by minimum price  
+- Validation for price & quantity  
 
-➤ Get Product by ID
-GET /product/{id}
+---
 
-➤ Add New Product
-POST /product
+## 🔗 API Endpoints
 
-Sample Body
+### Get All Products  
+`GET /product`
+
+### Get Product by ID  
+`GET /product/{id}`
+
+### Add New Product  
+`POST /product`
+
+Sample Request Body:
+
+```json
 {
   "id": 1,
   "name": "phone",
@@ -75,50 +103,61 @@ Sample Body
   "price": 699.99,
   "quantity": 50
 }
+```
 
-➤ Update Product
-PUT /product/{id}
+### Update Product  
+`PUT /product/{id}`
 
-➤ Delete Product
-DELETE /product/{id}
+### Delete Product  
+`DELETE /product/{id}`
 
-➤ Search by Name
-GET /product/search/{name}
+### Search by Name  
+`GET /product/search/{name}`
 
-➤ Pagination
-GET /product/page/?page=1&limit=5
+### Pagination  
+`GET /product/page/?page=1&limit=5`
 
-➤ Price Filter
-GET /product/price/?min_price=100
+### Price Filter  
+`GET /product/price/?min_price=100`
 
-⚙ Setup Locally
-Clone the repo
-Create virtual environment
-Install dependencies
+---
+
+## ⚙ Setup Locally
+
+1. Clone the repository  
+2. Create a virtual environment  
+3. Install dependencies  
+
+```bash
 pip install -r requirements.txt
-Add .env file
+```
+
+4. Add a `.env` file  
+
+```
 DATABASE_URL=your_postgres_url
-Run the server
+```
+
+5. Run the server  
+
+```bash
 uvicorn app.main:app --reload
+```
 
-Open in browser
-👉 http://127.0.0.1:8000/docs
+6. Open in browser  
+http://127.0.0.1:8000/docs  
 
-🧠 What I Learned
-Building real APIs using FastAPI
-Connecting FastAPI with PostgreSQL
-Structuring backend projects
-Writing clean and reusable code
-Handling validations and errors
-Deploying backend on Render
+---
 
-🚧 Phase 2 Plan
-Next improvements I plan to add:
-JWT Authentication
-User module
-Role-based access
-Better logging
-Unit tests
-Docker support
+## 🧠 What I Learned
 
-Thanks for checking out my project! 😊
+- Building real APIs using FastAPI  
+- Connecting FastAPI with PostgreSQL  
+- Structuring backend projects  
+- Writing clean and reusable code  
+- Handling validations and errors  
+- Deploying backend applications  
+
+---
+
+### Thanks for checking out my project!
